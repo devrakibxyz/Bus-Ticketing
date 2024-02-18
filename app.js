@@ -1,6 +1,7 @@
 const allBtn = document.getElementsByClassName("allBtn");
 
-let count = 12;
+let count = 20;
+let count2 = 1;
 
 for (const btn of allBtn) {
   btn.addEventListener("click", function (e) {
@@ -9,8 +10,9 @@ for (const btn of allBtn) {
 
     const seatContainer = document.getElementById("seat");
     const seatCount = document.getElementById("seat-count");
-    seatCount.innerText = seatContainer.childElementCount;
-    const seatcountt = seatCount.innerText;
+    seatCount.classList.remove("hidden");
+    // seatCount.innerText = seatContainer.childElementCount;
+    // const seatcountt = seatCount.innerText;
 
     if (seatContainer.childElementCount > 3) {
       return;
@@ -18,7 +20,7 @@ for (const btn of allBtn) {
 
     count -= 1;
     const busNumber = e.target.innerText;
-    setInnerText("40-seat", count);
+    setInnerText("20-seat", count);
 
     const p = document.createElement("p");
     seatContainer.appendChild(p);
@@ -70,4 +72,10 @@ document.getElementById("next-button").addEventListener("click", function () {
   fullSection.classList.add("hidden");
   const modal = document.getElementById("modal");
   modal.classList.remove("hidden");
+});
+document.getElementById("continue-btn").addEventListener("click", function () {
+  const fullSection = document.getElementById("full-section");
+  fullSection.classList.remove("hidden");
+  const modal = document.getElementById("modal");
+  modal.classList.add("hidden");
 });

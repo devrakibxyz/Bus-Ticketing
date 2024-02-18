@@ -75,7 +75,7 @@
         <div class="flex flex-col items-center">
           <h1 class="text-[64px] text-white font-extrabold">
             End-to-End Travel with <br />
-            <span class="text-[#1dd100]">P Paribahan</span>
+            <span class="text-[#1dd100]">B Paribahan</span>
           </h1>
           <p class="text-[#FFFFFF] w-[690px]">
             "Swiftly board with TicketIn Bus – your express route to hassle-free
@@ -109,23 +109,23 @@
             </div>
             <div class="card w-72 bg-primary text-primary-content bg-[#FFBF0F]">
               <div class="card-body">
-                <h2 class="card-title">NEW15</h2>
-                <p>Coupon Code</p>
+                <h2 class="card-title text-black font-bold">NEW15</h2>
+                <p class="text-[#03071280]">Coupon Code</p>
               </div>
             </div>
           </div>
           <div class="flex w-[575px] gap-1">
             <div class="card w-96 bg-primary text-primary-content bg-[#F78C9C]">
               <div class="card-body">
-                <h2 class="card-title">20% OFF</h2>
-                <p>on your next purchase</p>
-                <h4>use by January 2024</h4>
+                <h2 class="card-title text-black font-bold">20% OFF</h2>
+                <p class="text-black">on your next purchase</p>
+                <h4 class="text-[#03071280]">use by January 2024</h4>
               </div>
             </div>
             <div class="card w-72 bg-primary text-primary-content bg-[#F78C9C]">
               <div class="card-body">
-                <h2 class="card-title">Couple 20</h2>
-                <p>Coupon Code</p>
+                <h2 class="card-title text-black font-bold">Couple 20</h2>
+                <p class="text-black">Coupon Code</p>
               </div>
             </div>
           </div>
@@ -138,7 +138,7 @@
       <!-- bus-info -->
       <section>
         <div class="text-center mt-12">
-          <h1 class="text-[40px] font-semibold">P.H Paribahan</h1>
+          <h1 class="text-[40px] font-semibold">B Paribahan</h1>
           <p class="w-3/5 mx-auto">
             "Book your bus tickets effortlessly. Enjoy comfort,
             <span id="economy">Economoy</span>, and seamless journeys with our
@@ -147,35 +147,37 @@
         </div>
 
         <!-- two-side-bus-info -->
-        <div class="grid grid-cols-2">
+        <div class="grid grid-cols-3">
           <!-- bus-info-left -->
-          <div class="w-70% border">
+          <div class="col-span-2 mt-20">
             <!-- bus-info-top -->
-            <div class="flex">
+            <div class="flex justify-between">
               <!-- button-info-left-top-left -->
-              <div class="flex">
+              <div class="flex gap-5 items-center">
                 <div>
                   <img src="./images/bus-logo.png" alt="" />
                 </div>
                 <div>
-                  <h1>Greenline Paribahan</h1>
-                  <p>Coach-009-WEB ! AC_Business</p>
+                  <h1 class="text-5xl font-semibold">Greenline Paribahan</h1>
+                  <p class="text-[#03071280] text-2xl mt-5">
+                    Coach-009-WEB ! AC_Business
+                  </p>
                 </div>
               </div>
 
               <!-- button-info-left-top-right -->
               <div class="bus-info-button">
-                <a id="bus-btn" class="btn">
+                <a id="bus-btn" class="btn bg-green-200">
                   <img src="./images/bus-icon.png" alt="" />
-                  <span id="40-seat" class="text-[#1dd100]"
-                    >12 Seat left</span
+                  <span id="20-seat" class="text-[#1dd100] text-[18px]"
+                    >20 Seat left</span
                   ></a
                 >
               </div>
             </div>
 
             <!-- button-info-left-bottom -->
-            <div>
+            <div class="mt-12">
               <div class="flex justify-between">
                 <h1>Route</h1>
                 <h2>Dhaka - Sylhet</h2>
@@ -186,7 +188,7 @@
               </div>
 
               <!-- bus-info-button-left -->
-              <div class="flex justify-around gap-2">
+              <div class="flex justify-between mt-5">
                 <button class="btn btn-active btn-ghost">
                   Boarding Point - Laxmipur
                 </button>
@@ -201,16 +203,18 @@
           </div>
 
           <!-- bus-info-right -->
-          <div class="border flex justify-center flex-col items-center">
+          <div class="flex justify-center flex-col items-center space-y-3">
             <!-- bus-info-right-3 -->
             <div>
               <img src="./images/fare.png" alt="" />
             </div>
             <div>
-              <h1 id="ticket-price">550</h1>
+              <h1 class="text-black text-4xl">
+                <span id="ticket-price">550</span> Taka
+              </h1>
             </div>
             <div>
-              <p>Per Seat</p>
+              <p class="text-2xl">Per Seat</p>
             </div>
           </div>
         </div>
@@ -218,9 +222,9 @@
 
       <!-- ticketing interface -->
       <section id="buy-ticket" class="mt-20">
-        <div class="grid grid-cols-3 justify-between border">
+        <div class="grid grid-cols-3 gap-5 justify-between border">
           <!-- interface-left -->
-          <div class="border-black col-span-2">
+          <div class="col-span-2">
             <!-- interface-left-top -->
             <div>
               <h1 class="text-black font-bold">Select Your Seat</h1>
@@ -233,38 +237,48 @@
                 <img src="./images/seat-green-filled.png" alt="" />Selected
               </button>
             </div>
-            <div class="flex justify-end">
+            <div class="flex justify-end mr-5">
               <button><img src="./images/bus-icon.png" alt="" /></button>
             </div>
 
             <!-- ticket-interface-left-bottom -->
             <div id="all-seat" class="grid gap-2 grid-cols-5 grid-rows-10">
-              <button class="btn w-20 allBtn">A</button>
+              <h1 class="flex justify-center items-center">A</h1>
               <button class="btn w-20 allBtn">A1</button>
               <button class="btn w-20 allBtn">A2</button>
               <button class="btn w-20 allBtn">A3</button>
               <button class="btn w-20 allBtn">A4</button>
-              <button class="btn w-20 allBtn">B</button>
+              <h1 class="flex justify-center items-center">B</h1>
               <button class="btn w-20 allBtn">B1</button>
               <button class="btn w-20 allBtn">B2</button>
               <button class="btn w-20 allBtn">B3</button>
               <button class="btn w-20 allBtn">B4</button>
-              <button class="btn w-20 allBtn">C</button>
+              <h1 class="flex justify-center items-center">C</h1>
               <button class="btn w-20 allBtn">C1</button>
               <button class="btn w-20 allBtn">C2</button>
               <button class="btn w-20 allBtn">C3</button>
               <button class="btn w-20 allBtn">C4</button>
+              <h1 class="flex justify-center items-center">D</h1>
+              <button class="btn w-20 allBtn">D1</button>
+              <button class="btn w-20 allBtn">D2</button>
+              <button class="btn w-20 allBtn">D3</button>
+              <button class="btn w-20 allBtn">D4</button>
+              <h1 class="flex justify-center items-center">E</h1>
+              <button class="btn w-20 allBtn">E1</button>
+              <button class="btn w-20 allBtn">E2</button>
+              <button class="btn w-20 allBtn">E3</button>
+              <button class="btn w-20 allBtn">E4</button>
             </div>
           </div>
 
           <!-- interface-right -->
-          <div class="border">
+          <div>
             <div class="overflow-x-auto">
               <table class="table table-zebra">
                 <!-- head -->
                 <thead>
                   <tr>
-                    <th>Seat <span id="seat-count"></span></th>
+                    <th>Seat <span id="seat-count" class="hidden">1</span></th>
                     <th>Class</th>
                     <th>price</th>
                   </tr>
@@ -357,7 +371,10 @@
             Shortly you will find a confirmation in your email.
           </p>
 
-          <button class="btn bg-[#27ae60] w-52 m-auto text-white">
+          <button
+            id="continue-btn"
+            class="btn bg-[#27ae60] w-52 m-auto text-white"
+          >
             Continue
           </button>
         </div>
