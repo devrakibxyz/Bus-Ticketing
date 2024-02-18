@@ -4,3 +4,6 @@
   border-radius: 12px;
   background: rgba(29, 209, 0, 0.1);
 }
+.banner-part {
+  background-image: url(./images/banner.png);
+}
