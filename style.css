@@ -1,0 +1,6 @@
+#menu-btn {
+  box-sizing: border-box;
+  border: 1px solid rgba(29, 209, 0, 0.4);
+  border-radius: 12px;
+  background: rgba(29, 209, 0, 0.1);
+}
