@@ -4,6 +4,9 @@ let count = 12;
 
 for (const btn of allBtn) {
   btn.addEventListener("click", function (e) {
+    e.target.style.backgroundColor = "#1dd100";
+    e.target.style.color = "white";
+
     const seatContainer = document.getElementById("seat");
     const seatCount = document.getElementById("seat-count");
     seatCount.innerText = seatContainer.childElementCount;
@@ -34,14 +37,10 @@ for (const btn of allBtn) {
 
     const totalPrice = document.getElementById("total-price").innerText;
     const convertPrice = parseInt(totalPrice);
+    console.log(convertPrice);
+
     const sum = convertPrice + parseInt(ticketPrice);
     setInnerText("total-price", sum);
-
-    // seat.classList.add("seat-count");
-    // const seatCount = document.getElementsByClassName("seat-count").length;
-    // const span = document.createElement("span");
-    // seat.appendChild(span);
-    // span.innerText = seatCount;
   });
 }
 
@@ -51,7 +50,6 @@ function setInnerText(id, value) {
 document.getElementById("input-text").addEventListener("keyup", function (e) {
   const text = e.target.value;
   const deleteButton = document.getElementById("coupon-button");
-  console.log(deleteButton);
   if (text == "NEW15") {
     deleteButton.removeAttribute("disabled");
   } else if (text == "couple 20") {
@@ -63,6 +61,7 @@ document.getElementById("input-text").addEventListener("keyup", function (e) {
 
 document.getElementById("coupon-button").addEventListener("click", function () {
   const couponSection = document.getElementById("coupon-section");
+
   couponSection.style.display = "none";
 });
 
