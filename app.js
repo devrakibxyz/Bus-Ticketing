@@ -1,7 +1,7 @@
 const allBtn = document.getElementsByClassName("allBtn");
 
 let count = 20;
-let count2 = 1;
+let count2 = 0;
 
 for (const btn of allBtn) {
   btn.addEventListener("click", function (e) {
@@ -11,6 +11,9 @@ for (const btn of allBtn) {
     const seatContainer = document.getElementById("seat");
     const seatCount = document.getElementById("seat-count");
     seatCount.classList.remove("hidden");
+    count2 += 1;
+    seatCount.innerText = count2;
+
     // seatCount.innerText = seatContainer.childElementCount;
     // const seatcountt = seatCount.innerText;
 
